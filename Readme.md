@@ -92,6 +92,16 @@ If you have an element, like a list, with many children. It's not efficient to s
 ### DOM Event Propagation Lab
 Fork, clone and complete this. [Lab](https://github.com/ga-wdi-boston/wdi_7_js_lab_record_company).
 
-## This pointer in Events
+## This pointer in Event Handler.
+The problem is that the _'this'_ pointer in an event handler points to the element that fired the event. 
+
+If we want the _'this'_ pointer in the event handler to point to the same object that defined the handler we can use the javascript _bind_ function. 
+
+### Demo Steps
+1. this_pointer.html 
+2. this_callback.html
+
+
+
 
 
