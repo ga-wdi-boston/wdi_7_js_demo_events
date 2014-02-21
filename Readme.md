@@ -24,7 +24,7 @@ Take a  look at these [Events](http://en.wikipedia.org/wiki/DOM_events#Common.2F
 	
 Each Event has an event object that has a set of properties associated with it. These properties. This object is created when the Event is fired. Some properties are the event type and target.
 
-### DOM Event Lab
+### DOM Simple Event Lab.
 
 
 ## Event propagation.
@@ -49,7 +49,8 @@ The last phase of propagation is __bubbling__. The event can __bubble__ up the D
 
 
 ### DOM Event Propagation Lab
-
+1. Write an app that dynamically adds list elements to a list with an input field.  The list elements should be able to delete themselves.
+2. Attach the list element delete handler function to the list container.
 
 ## This pointer in Events
 
