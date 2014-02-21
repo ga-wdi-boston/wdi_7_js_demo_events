@@ -87,7 +87,7 @@ If you have an element, like a list, with many children. It's not efficient to s
 
 
 ### Demo Steps
-1. simple_button4.html 
+1. Show how events can be captured and bubble up to ancestor elements. We'll create a parent div around the button. Then set a handler on this parent div. We'll show the event's target and current target. And what these two properties change. simple_button4.html 
 2. dynamic_list.html
 
 
