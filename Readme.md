@@ -25,13 +25,15 @@ Take a  look at these [Events](http://en.wikipedia.org/wiki/DOM_events#Common.2F
 Each Event has an event object that has a set of properties associated with it. This object is created when the Event is fired. Some properties are the event type and target.
 
 ### Event Handlers.
-For most browsers, not IE.  
+For most browsers, not IE, use the addEventListener function to create a event handler.  
 
 [EventTarget.addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.addEventListener)  
 
 <code>
 	document.getElementById('some-id').addEventListener(<event>, <event-handler>, <use_capture>);
 </code>
+
+We are __not__ going to go over IE functions for event handling. We'll use a library, like jQuery, that will provide event handler functions for IE and standards compliant browsers like Chrome, Firefox and Safari.
 
 ### Demo Steps
 1. simple_button.html
@@ -57,14 +59,14 @@ How the events travel through the DOM.
 
 ### Event Capturing.
 The first phase of propagation is __capturing__. Each ancestor of the element that is the target of the event __may__ intercept the event and either ignore the event of do some processing.  
-__IE does NOT implement Event Capturing, only has Event Bubbling__
+__IE does NOT implement Event Capturing, it only implements Event Bubbling__
 
- _Each event handler may stop capturing by setting event.stopPropagation();_
+ _Each event handler may stop capturing by calling event.stopPropagation();_
 
 ### Event Bubbling.
 The last phase of propagation is __bubbling__. The event can __bubble__ up the DOM tree. Each ancestor of the element generating the event will recieve the event after the target element This event is __bubbling up__ the DOM tree.   
 
-_Each event handler may stop capturing by setting event.stopPropagation();_
+_Each event handler may stop capturing by calling event.stopPropagation();_
 
 ![dfjfd](./event-bubbling.png)
 
@@ -84,7 +86,7 @@ If you have an element, like a list, with many children. It's not efficient to s
 
 
 
-## Demo Steps
+### Demo Steps
 1. simple_button4.html 
 2. dynamic_list.html
 
