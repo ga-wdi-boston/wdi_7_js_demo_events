@@ -24,7 +24,13 @@ Take a  look at these [Events](http://en.wikipedia.org/wiki/DOM_events#Common.2F
 	
 Each Event has an event object that has a set of properties associated with it. These properties. This object is created when the Event is fired. Some properties are the event type and target.
 
+### Demo Steps
+1. simple_button.html
+2. simple_button2.html
+3. simple_button3.html (Level 2 DOM Events)
+
 ### DOM Simple Event Lab.
+Fork, clone and complete this. [Lab repo](https://github.com/ga-wdi-boston/wdi_7_js_lab_simple_events)
 
 
 ## Event propagation.
@@ -47,10 +53,16 @@ The first phasee of propagation is __capturing__. Each ancestor of the element t
 The last phase of propagation is __bubbling__. The event can __bubble__ up the DOM tree. Each ancestor of the element generating the event will recieve the event after the target element This event is __bubbling up__ the DOM tree.
 ![dfjfd](./event-bubbling.png)
 
+### Demo Steps
+1. simple_button4.html 
+2. 
+
 
 ### DOM Event Propagation Lab
-1. Write an app that dynamically adds list elements to a list with an input field.  The list elements should be able to delete themselves.
-2. Attach the list element delete handler function to the list container.
+1. Write an app that list elements to a list in the DOM.
+2. Each list element's text will be added from a input field.
+3. Each list element will have a delete button.
+4. Attach the list element delete handler function to the list itself. Not to each element in the list.
 
 ## This pointer in Events
 
